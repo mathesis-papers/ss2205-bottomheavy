@@ -1,0 +1,15 @@
+{
+  "id": "ss2205-bottomheavy",
+  "revision": 3,
+  "problem_ids": ["ss2205-bottomheavy"],
+  "topic": "Bottom heaviness of the four unshifted q-Stirling coefficient families",
+  "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+  "creators": [
+    {"name": "Haobo Ma", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Wenlin Zhang", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We give an alternative proof, after Shi-Mei Ma (2026) and Principia Math in Progress (2026, Theorem 1), of Sagan and Swanson's Conjecture 7.6 (arXiv:2205.14078v1, Section 7.5, p. 40, posed May 27, 2022), using concentric interval layers for all four unshifted families. All four unshifted q-Stirling families are bottom heavy: each coefficient below the middle is at least its reflected coefficient. Concentric interval layers give an elementary proof for every nonnegative linear combination of products of q-integers. The layers give coefficient injections, an exact formula for the reflection defect, and a classification of symmetric entries. We deduce complex-reflection-group consequences and a closed alternating-sum formula clarifying the symmetry in the source's Conjecture 7.9.",
+  "summary": "An attributed interval-layer proof with product-of-chains injections, an exact reflection-defect identity, symmetric-entry classifications, positive-support corollaries, and a closed alternating-sum identity. Closure, upper-half monotonicity, symmetric-function and displayed complex-group consequences also follow from Ma's Lemmas 2--4 and Proposition 1. The pinned Lean declaration covers the four natural-coefficient bottom-heaviness assertions; the extensions have written proofs and exact finite checks.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+}

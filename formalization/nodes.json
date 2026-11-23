@@ -1,0 +1,404 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s1",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s1",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "Every finite product of $\\qi{m}$ with $m\\ge1$ is symmetric and\nunimodal, with nonnegative coefficients and constant coefficient one.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s10",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s10",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s10",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "The alternating sum in Sagan--Swanson Conjecture 7.9 satisfies, for $n\\ge0$,\n\\begin{equation}\n \\sum_{k=0}^n(-1)^{n-k}q^{2(n-k)}\\qi{k}!S[n,k]-1\n   =(1-q)(1+q)^n-1+q^{n+1}.\n\\end{equation}\nFor $n\\ge1$ its coefficient at $q^j$, $1\\le j\\le n$, is\n$\\binom nj-\\binom n{j-1}$; coefficients at zero and $n+1$ vanish.\nThe nonzero coefficients are positive below $(n+1)/2$, negative above\nit, and paired with their negatives by $j\\mapsto n+1-j$.\nFor $n\\ge2$, factoring out the initial $q$ makes the absolute-coefficient\npolynomial palindromic in the ordinary degree convention.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s2",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "Let $f$ have nonnegative, symmetric unimodal coefficients and degree\n$d\\le D$. Then $\\coef{D-r}{f}\\le\\coef r f$ for every $0\\le r$ with\n$2r<D$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s3",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s3",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "Every polynomial in\n\\[\n \\mathcal C=\\left\\{\\sum_{\\nu=1}^{N}\\lambda_\\nu\n       \\prod_{j=1}^{s_\\nu}\\qi{m_{\\nu j}}:\n       N,s_\\nu\\ge0,\\ \\lambda_\\nu\\in\\mathbb R_{\\ge0},\\ m_{\\nu j}\\ge1\\right\\}\n\\]\nis bottom heavy. If its actual degree is $D$, its coefficients also\nsatisfy $a_i\\ge a_{i+1}$ for $\\lceil D/2\\rceil\\le i<D$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s4",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "All four unshifted families in \\eqref{eq:rec} satisfy \\eqref{eq:bh}\nfor every $n\\ge0$ and $k\\in\\mathbb Z$.\nThe ordered second-kind families\n$S^o[n,k]=\\qi{k}!S[n,k]$ and\n$S_B^o[n,k]=\\qi{2k}!!S_B[n,k]$ have the same property for $k\\ge0$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s5",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "Every nonzero member of $\\mathcal C$ has strictly positive coefficients\nat all exponents from zero to its actual degree. In particular the\npositivity clauses of \\cite[Conjectures 7.4 and 7.5]{SS} hold for\nnonzero entries.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s6",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "For a mixture in $\\mathcal C$ with integer weights, the product-of-chains\nencoding admits an explicit injection from the objects of rank $D-r$\nto those of rank $r$ whenever $2r<D$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s7",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "Write $P=\\sum_\\nu\\lambda_\\nu f_\\nu$, where the $f_\\nu$ are nonzero\nnonnegative symmetric unimodal polynomials, $\\lambda_\\nu>0$, and\n$d_\\nu=\\deg f_\\nu\\le D=\\deg P$.\nPut $b_{\\nu,j}=[q^j]f_\\nu$, $b_{\\nu,-1}=0$, and\n$\\delta_{\\nu,j}=b_{\\nu,j}-b_{\\nu,j-1}$ for\n$0\\le j\\le\\lfloor d_\\nu/2\\rfloor$.\nFor every integer $0\\le r<D/2$,\n\\begin{equation}\n [q^r]P-[q^{D-r}]P=\n \\sum_\\nu\\lambda_\\nu\n \\sum_{\\substack{0\\le j\\le\\lfloor d_\\nu/2\\rfloor\\\\\n                  j\\le r\\le d_\\nu-j\\\\ d_\\nu-j<D-r}}\n       \\delta_{\\nu,j}.\n\\end{equation}\nThus equality holds precisely when all the displayed $\\delta_{\\nu,j}$\nvanish. Each positive displayed term gives a lower bound for the defect.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s8",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "For $n\\ge1$, among nonzero entries the symmetric cases are exactly\n\\[\n\\begin{array}{c|c}\n S[n,k]\\text{ and }c[n,k]& k=1\\text{ or }k=n\\\\\n S_B[n,k]\\text{ and }c_B[n,k]& k=0\\text{ or }k=n.\n\\end{array}\n\\]\nIn every other nonzero case the constant coefficient is strictly larger\nthan the leading coefficient. The initial row and all zero entries are symmetric.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s9",
+      "contributor": null,
+      "identity": "collected:ss2205-bottomheavy:3:s9",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+      },
+      "lineage": "collected:ss2205-bottomheavy:s9",
+      "macros": {
+        "\\coef": "[q^{#1}]#2",
+        "\\qi": "[#1]_q"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ss2205-bottomheavy",
+      "scope": "in_scope",
+      "statement": "For $0\\le k\\le n$, the following polynomials are bottom heavy,\npositive throughout their nonempty supports, and nonincreasing on\nthe upper half of their degree ranges:\n\\begin{align*}\n S[m,n,k]&=h_{n-k}(\\qi1,\\qi{m+1},\\ldots,\\qi{km+1}),\\\\\n (-1)^{n-k}s[m,n,k]&=e_{n-k}(\\qi1,\\qi{m+1},\\ldots,\\qi{(n-1)m+1}),\\\\\n \\widetilde S[m,n,k]&=h_{n-k}(\\qi{m-1},\\qi{2m-1},\\ldots,\\qi{(k+1)m-1}),\n\\end{align*}\nas well as their products with $[km]!_m$.\nThe Chan--Rhoades polynomial $S^o_{CR}[m,n,k]$ has these properties;\nthe Hilbert polynomial whose coefficient reversal it equals is top heavy.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+      "toolchain": null,
+      "version": 3,
+      "work": "ss2205-bottomheavy"
+    }
+  ]
+}

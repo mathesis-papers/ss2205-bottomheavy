@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 88786,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "c34d0b595ca02837b57814e035c449c93731d259fb6fe2a890427f66273cfe21",
+      "sha256": "c34d0b595ca02837b57814e035c449c93731d259fb6fe2a890427f66273cfe21"
+    },
+    "source": {
+      "bytes": 16403,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "1c0cb65df3ddc3dd89d549666aab7ac1b51aee61f5931bb2e0d7e3b3f1d1cbbc",
+      "sha256": "1c0cb65df3ddc3dd89d549666aab7ac1b51aee61f5931bb2e0d7e3b3f1d1cbbc"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We give an alternative proof, after Shi-Mei Ma (2026) and Principia Math in Progress (2026, Theorem 1), of Sagan and Swanson's Conjecture 7.6 (arXiv:2205.14078v1, Section 7.5, p. 40, posed May 27, 2022), using concentric interval layers for all four unshifted families. All four unshifted q-Stirling families are bottom heavy: each coefficient below the middle is at least its reflected coefficient. Concentric interval layers give an elementary proof for every nonnegative linear combination of products of q-integers. The layers give coefficient injections, an exact formula for the reflection defect, and a classification of symmetric entries. We deduce complex-reflection-group consequences and a closed alternating-sum formula clarifying the symmetry in the source's Conjecture 7.9.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 88786,
+      "sha256": "c34d0b595ca02837b57814e035c449c93731d259fb6fe2a890427f66273cfe21",
+      "url": "/api/v1/collected-papers/ss2205-bottomheavy/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T07:03:43.388177253Z",
+    "record": "ss2205-bottomheavy",
+    "repository_name": "ss2205-bottomheavy",
+    "source": {
+      "bytes": 16403,
+      "sha256": "1c0cb65df3ddc3dd89d549666aab7ac1b51aee61f5931bb2e0d7e3b3f1d1cbbc",
+      "url": "/api/v1/collected-papers/ss2205-bottomheavy/files/source?version=3"
+    },
+    "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T07:03:43.388177253Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "ss2205-bottomheavy"
+  }
+}

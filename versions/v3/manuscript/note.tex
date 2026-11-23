@@ -1,0 +1,449 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\newcommand{\qi}[1]{[#1]_q}
+\newcommand{\coef}[2]{[q^{#1}]#2}
+\title{Coefficient injections and equality for Sagan--Swanson bottom heaviness\\
+\large An alternative proof after Ma and Principia Math}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 14, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give an alternative proof, after Shi-Mei Ma (2026) and Principia
+Math in Progress (2026, Theorem 1), of Sagan and Swanson's
+Conjecture 7.6 (arXiv:2205.14078v1, Section 7.5, p.~40, posed
+May 27, 2022), using concentric interval layers for all four unshifted families.
+All four unshifted $q$-Stirling families are bottom heavy: each
+coefficient below the middle is at least its reflected coefficient.
+Concentric interval layers give an elementary proof for every
+nonnegative linear combination of products of $q$-integers.
+The layers give coefficient injections, an exact formula for the
+reflection defect, and a classification of symmetric entries.
+We deduce complex-reflection-group consequences and a closed
+alternating-sum formula clarifying the symmetry in the source's Conjecture 7.9.
+\end{abstract}
+
+\section{The statement and its conventions}
+Sagan and Swanson ask whether the coefficients of $S[n,k]$, $c[n,k]$,
+$S_B[n,k]$, and $c_B[n,k]$ are bottom heavy \cite[Conjecture 7.6]{SS}.
+For a nonzero polynomial $P(q)=\sum_{i=0}^D a_iq^i$ of actual degree $D$,
+this means
+\begin{equation}\label{eq:bh}
+ a_{D-r}\le a_r\qquad(0\le r,\ 2r<D).
+\end{equation}
+The condition is vacuous for constants and for the zero polynomial,
+whose natural degree we set to zero. The result holds even when a
+coefficient sequence is not unimodal.
+
+Write $\qi{m}=1+q+\cdots+q^{m-1}$ for $m\ge1$, and $\qi0=0$.
+The four initial rows are $\delta_{0,k}$, and the recurrences are
+\begin{align}
+ S[n+1,k]&=S[n,k-1]+\qi{k}S[n,k],\notag\\
+ c[n+1,k]&=c[n,k-1]+\qi{n}c[n,k],\label{eq:rec}\\
+ S_B[n+1,k]&=S_B[n,k-1]+\qi{2k+1}S_B[n,k],\notag\\
+ c_B[n+1,k]&=c_B[n,k-1]+\qi{2n+1}c_B[n,k].\notag
+\end{align}
+These are equations (2), (5), (8), and (9) of \cite{SS}'s first
+arXiv version. Entries outside $0\le k\le n$ are zero; second-kind
+recurrences need only be evaluated for $k\ge0$. Thus no negative
+$q$-integer is needed. In particular, $S$ is the unshifted family,
+not $q^{\binom{k}{2}}S[n,k]$.
+
+Ma \cite{Ma} proves both bottom heaviness and monotonicity
+on the upper half of the degree range. His public ChinaXiv deposit is dated
+September 18, 2026. Principia Math in Progress
+\cite[Lemmas 1--2 and Theorem 1]{PM} proves bottom heaviness for the
+whole class of nonnegative combinations of products of $q$-integers.
+The latter manuscript is dated September 12, 2026; its cited public
+source was preserved on October 27, 2026. These dates distinguish a
+manuscript date from a dated public copy. The proof below gives the
+same closure statement through interval layers.
+
+More precisely, Ma's Lemma 2 treats any nonnegative sum of symmetric
+unimodal polynomials, Lemma 3 treats their products, and Lemma 4 applies
+this mechanism to recurrences; his Proposition 1 treats elementary and
+complete homogeneous symmetric functions on such alphabets
+\cite[pp.~8--12]{Ma}. Thus the closure, upper-half monotonicity and
+displayed complex-group consequences below also follow from his results.
+Here the interval layers provide the rank injection and exact reflection
+defect, including equality criteria and the symmetric-entry classification.
+
+\section{Interval layers and an ambient degree}
+For coefficients extended by zero outside $[0,d]$, symmetry and
+unimodality mean $a_i=a_{d-i}$ and that the coefficients weakly
+increase toward $d/2$. Under symmetry, unimodality is equivalent to
+$a_i\le a_j$ whenever
+$0\le i\le j$ and $i+j\le d$.
+
+\begin{lemma}\label{lem:products}
+Every finite product of $\qi{m}$ with $m\ge1$ is symmetric and
+unimodal, with nonnegative coefficients and constant coefficient one.
+\end{lemma}
+\begin{proof}
+A polynomial $f$ of degree $d$ with nonnegative symmetric unimodal
+coefficients has the layer expansion
+\begin{equation}\label{eq:layers}
+ f(q)=\sum_{j=0}^{\lfloor d/2\rfloor}
+ (a_j-a_{j-1})q^j\qi{d-2j+1},\qquad a_{-1}=0.
+\end{equation}
+Indeed, its coefficient at $i\in[0,d]$ is the telescoping sum
+$\sum_{j=0}^{\min(i,d-i)}(a_j-a_{j-1})=a_{\min(i,d-i)}=a_i$.
+All layer weights are nonnegative. For $a,b\ge1$, direct coefficient
+counting gives
+\begin{equation}\label{eq:interval}
+ \qi a\qi b=\sum_{t=0}^{\min(a,b)-1}q^t\qi{a+b-1-2t}.
+\end{equation}
+Both sides have coefficient $\min(i+1,a,b,a+b-1-i)$ at
+$0\le i\le a+b-2$. Each interval on the right is centered at
+$(a+b-2)/2$, so the product is symmetric unimodal.
+Multiplying each layer in \eqref{eq:layers} by $\qi m$ and applying
+\eqref{eq:interval} produces symmetric unimodal layers with common
+center $(d+m-1)/2$. Their sum is symmetric unimodal.
+Induction starting from the empty product $1$ proves the assertion;
+constant coefficients multiply to one.
+\end{proof}
+
+\begin{lemma}\label{lem:ambient}
+Let $f$ have nonnegative, symmetric unimodal coefficients and degree
+$d\le D$. Then $\coef{D-r}{f}\le\coef r f$ for every $0\le r$ with
+$2r<D$.
+\end{lemma}
+\begin{proof}
+If $D-r>d$, the left side is zero. Otherwise set $t=d-D+r$.
+Then $0\le t\le r$ and $t+r=d-D+2r<d$. Symmetry followed by
+increase toward the center gives
+$\coef{D-r}{f}=\coef t f\le\coef r f$.
+\end{proof}
+
+\begin{theorem}\label{thm:closure}
+Every polynomial in
+\[
+ \mathcal C=\left\{\sum_{\nu=1}^{N}\lambda_\nu
+       \prod_{j=1}^{s_\nu}\qi{m_{\nu j}}:
+       N,s_\nu\ge0,\ \lambda_\nu\in\mathbb R_{\ge0},\ m_{\nu j}\ge1\right\}
+\]
+is bottom heavy. If its actual degree is $D$, its coefficients also
+satisfy $a_i\ge a_{i+1}$ for $\lceil D/2\rceil\le i<D$.
+\end{theorem}
+\begin{proof}
+Discard zero weights. If nothing remains there is no strict-half
+comparison. Otherwise nonnegativity and positive leading coefficients
+give $D=\max_\nu d_\nu$, where $d_\nu=\sum_j(m_{\nu j}-1)$.
+Apply Lemmas \ref{lem:products} and \ref{lem:ambient} to each product,
+multiply by $\lambda_\nu$, and sum. This proves \eqref{eq:bh}.
+For $i\ge\lceil D/2\rceil$, each summand's extended coefficient
+sequence is on or beyond its own middle $d_\nu/2$, where it is
+nonincreasing. Summing proves the last assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:stirling}
+All four unshifted families in \eqref{eq:rec} satisfy \eqref{eq:bh}
+for every $n\ge0$ and $k\in\mathbb Z$.
+The ordered second-kind families
+$S^o[n,k]=\qi{k}!S[n,k]$ and
+$S_B^o[n,k]=\qi{2k}!!S_B[n,k]$ have the same property for $k\ge0$.
+\end{corollary}
+\begin{proof}
+The class $\mathcal C$ contains $0,1$ and is closed under addition
+and multiplication by any $\qi m$, including $m=0$.
+Induction on $n$ in all four recurrences puts every entry in
+$\mathcal C$. The ordered multipliers are products of $q$-integers.
+Apply Theorem \ref{thm:closure}.
+\end{proof}
+
+The same argument reproves Ma's symmetric-function consequence
+\cite[Proposition 1]{Ma}: every elementary or complete homogeneous
+symmetric polynomial evaluated at a finite alphabet
+$\qi{m_1},\ldots,\qi{m_s}$ with positive integer lengths is bottom heavy,
+because its monomial expansion is a nonnegative sum of products of these
+entries. This includes the symmetric-function expressions in
+\cite[Theorem 2.1]{SS}.
+
+\begin{corollary}\label{cor:positive}
+Every nonzero member of $\mathcal C$ has strictly positive coefficients
+at all exponents from zero to its actual degree. In particular the
+positivity clauses of \cite[Conjectures 7.4 and 7.5]{SS} hold for
+nonzero entries.
+\end{corollary}
+\begin{proof}
+A product of positive-length $q$-integers has positive coefficients
+throughout its degree range: convolution of two positive sequences
+supported on integer intervals has the same property. Choose a
+positive-weight summand of maximum degree in a nonzero mixture.
+Its coefficients are positive throughout the whole support of the sum.
+\end{proof}
+
+\section{Injections and equality}
+\begin{corollary}\label{cor:injection}
+For a mixture in $\mathcal C$ with integer weights, the product-of-chains
+encoding admits an explicit injection from the objects of rank $D-r$
+to those of rank $r$ whenever $2r<D$.
+\end{corollary}
+\begin{proof}
+Label each summand and each of its copies separately. A product
+$\prod_j\qi{m_j}$ counts the tuples $0\le x_j<m_j$ by rank $\sum_jx_j$.
+Decompose this product of chains into symmetric saturated chains
+as follows. For a rectangle $0\le x<a$, $0\le y<b$ with $a\le b$,
+the chain indexed by $t=0,\ldots,a-1$ is
+\[
+ (t,0),(t,1),\ldots,(t,b-1-t),
+ (t+1,b-1-t),\ldots,(a-1,b-1-t).
+\]
+These disjoint chains cover the rectangle, and their first and last
+ranks sum to $a+b-2$. Interchange coordinates if $a>b$.
+Applying this rectangle construction successively to each existing
+chain and the next factor gives symmetric chains with rank intervals
+$[j,d-j]$, where $d$ is the degree of the summand.
+
+An element of rank $D-r$ lies in such a chain only if $D-r\le d-j$.
+Since $d\le D$ and $r<D-r$, it follows that $j\le r\le d-j$.
+Map the element to the unique element of rank $r$ on its chain,
+retaining the summand and copy labels. Different chains or labels
+cannot collide, and each chain has at most one element of rank $D-r$.
+This proves injectivity. In particular the construction applies to
+the labeled product expansions obtained from the four recurrences.
+\end{proof}
+
+\begin{corollary}\label{cor:defect}
+Write $P=\sum_\nu\lambda_\nu f_\nu$, where the $f_\nu$ are nonzero
+nonnegative symmetric unimodal polynomials, $\lambda_\nu>0$, and
+$d_\nu=\deg f_\nu\le D=\deg P$.
+Put $b_{\nu,j}=[q^j]f_\nu$, $b_{\nu,-1}=0$, and
+$\delta_{\nu,j}=b_{\nu,j}-b_{\nu,j-1}$ for
+$0\le j\le\lfloor d_\nu/2\rfloor$.
+For every integer $0\le r<D/2$,
+\begin{equation}\label{eq:defect}
+ [q^r]P-[q^{D-r}]P=
+ \sum_\nu\lambda_\nu
+ \sum_{\substack{0\le j\le\lfloor d_\nu/2\rfloor\\
+                  j\le r\le d_\nu-j\\ d_\nu-j<D-r}}
+       \delta_{\nu,j}.
+\end{equation}
+Thus equality holds precisely when all the displayed $\delta_{\nu,j}$
+vanish. Each positive displayed term gives a lower bound for the defect.
+\end{corollary}
+\begin{proof}
+Use the layer expansion \eqref{eq:layers} in each summand.
+A layer supported on $[j,d_\nu-j]$ that contains $D-r$ also contains
+$r$, by the inequalities in the preceding proof. Its contribution to
+the difference is therefore one exactly when it contains $r$ but not
+$D-r$, and zero otherwise. All the layer weights are nonnegative,
+which proves both the formula and the equality criterion.
+\end{proof}
+
+\begin{corollary}\label{cor:symmetric}
+For $n\ge1$, among nonzero entries the symmetric cases are exactly
+\[
+\begin{array}{c|c}
+ S[n,k]\text{ and }c[n,k]& k=1\text{ or }k=n\\
+ S_B[n,k]\text{ and }c_B[n,k]& k=0\text{ or }k=n.
+\end{array}
+\]
+In every other nonzero case the constant coefficient is strictly larger
+than the leading coefficient. The initial row and all zero entries are symmetric.
+\end{corollary}
+\begin{proof}
+Use $S[n,k]=h_{n-k}(\qi1,\ldots,\qi k)$ and
+$c[n,k]=e_{n-k}(\qi1,\ldots,\qi{n-1})$, and the type $B$
+formulas in \cite[Theorem 2.1]{SS}.
+Every product in these expansions has constant and leading coefficient one.
+Consequently the constant coefficient of the sum counts all products,
+whereas the leading coefficient counts just those of maximum degree.
+For $S[n,k]$ with $2\le k<n$, the products $\qi1^{n-k}$ and
+$\qi k^{n-k}$ have different degrees; for $S_B[n,k]$ the same argument
+uses $\qi1$ and $\qi{2k+1}$ when $1\le k<n$.
+For either first-kind family, the elementary products of a fixed
+size strictly between zero and the alphabet size have different degrees,
+because the alphabet lengths are strictly increasing.
+In the remaining cases the polynomial is constant or a single product
+of $q$-integers, hence symmetric by Lemma~\ref{lem:products}.
+\end{proof}
+
+\section{Other source consequences}
+For $m\ge2$ write $[km]!_m=\prod_{i=1}^k\qi{im}$.
+The following statements concern the unshifted polynomials defined by
+Sagan and Swanson in \cite{Complex}.
+\begin{corollary}\label{cor:complex}
+For $0\le k\le n$, the following polynomials are bottom heavy,
+positive throughout their nonempty supports, and nonincreasing on
+the upper half of their degree ranges:
+\begin{align*}
+ S[m,n,k]&=h_{n-k}(\qi1,\qi{m+1},\ldots,\qi{km+1}),\\
+ (-1)^{n-k}s[m,n,k]&=e_{n-k}(\qi1,\qi{m+1},\ldots,\qi{(n-1)m+1}),\\
+ \widetilde S[m,n,k]&=h_{n-k}(\qi{m-1},\qi{2m-1},\ldots,\qi{(k+1)m-1}),
+\end{align*}
+as well as their products with $[km]!_m$.
+The Chan--Rhoades polynomial $S^o_{CR}[m,n,k]$ has these properties;
+the Hilbert polynomial whose coefficient reversal it equals is top heavy.
+\end{corollary}
+\begin{proof}
+The formulas are \cite[Theorem 3.2(16), Section 6.1,
+equation (20), and Proposition 5.10]{Complex}.
+The last identifies $S^o_{CR}=[km]!_m S[m,n,k]$ as a reversed Hilbert
+polynomial. All the displayed alphabets have positive integer lengths,
+so their symmetric-function expansions and the factorial multipliers
+belong to $\mathcal C$. Apply Theorem~\ref{thm:closure} and
+Corollary~\ref{cor:positive}. Reversing coefficients changes the
+bottom-heavy inequalities into the top-heavy inequalities
+$a_r\le a_{D-r}$ for $2r<D$.
+\end{proof}
+
+These deductions do not cover the subtractive formula (17) of
+\cite{Complex}, arbitrary signed first-kind coefficients, or every
+irreducible complex reflection group. They concern the displayed
+families, not the conjectural super-coinvariant interpretations.
+
+\begin{corollary}\label{cor:alternating}
+The alternating sum in Sagan--Swanson Conjecture 7.9 satisfies, for $n\ge0$,
+\begin{equation}\label{eq:alternating}
+ \sum_{k=0}^n(-1)^{n-k}q^{2(n-k)}\qi{k}!S[n,k]-1
+   =(1-q)(1+q)^n-1+q^{n+1}.
+\end{equation}
+For $n\ge1$ its coefficient at $q^j$, $1\le j\le n$, is
+$\binom nj-\binom n{j-1}$; coefficients at zero and $n+1$ vanish.
+The nonzero coefficients are positive below $(n+1)/2$, negative above
+it, and paired with their negatives by $j\mapsto n+1-j$.
+For $n\ge2$, factoring out the initial $q$ makes the absolute-coefficient
+polynomial palindromic in the ordinary degree convention.
+\end{corollary}
+\begin{proof}
+Use the classical falling-factorial identity
+\[
+ x^n=\sum_{k=0}^n S[n,k]\prod_{j=0}^{k-1}(x-\qi j),
+\]
+as in \cite[equation (3.12)]{DZ}. Substituting $x=-q^{-1}$
+and $x=-q^{-2}(1+q)$ in the rational function field gives respectively
+\[
+ \sum_k(-1)^{n-k}q^{n-k}\qi{k}!S[n,k]=1,\qquad
+ \sum_k(-1)^{n-k}q^{2(n-k)}\qi{k+1}!S[n,k]=(1+q)^n.
+\]
+Let $F$ be the sum on the left of \eqref{eq:alternating} before
+subtracting one. Since $(1-q)\qi{k+1}=1-q^{k+1}$, these two
+identities imply $F-q^{n+1}=(1-q)(1+q)^n$.
+This is an identity of polynomials, hence includes $q=0,1$.
+The coefficient formula follows by the binomial theorem. Finally
+$\binom nj>\binom n{j-1}$ exactly when $j<(n+1)/2$;
+binomial symmetry gives the asserted sign pairing. For $n=0$ the
+polynomial is zero.
+\end{proof}
+
+\section{Scope and mathematical coverage}
+The symmetry convention in Conjecture 7.9 needs care. If $P_n$ denotes
+the left side of \eqref{eq:alternating}, then $P_2=q-q^2$.
+Its absolute-coefficient polynomial $q+q^2$ is not palindromic
+with respect to its actual degree two. The exact symmetry is
+$q^{n+1}P_n(1/q)=-P_n(q)$ for $n\ge1$; after factoring out $q$,
+the absolute coefficients are palindromic. Thus the sign assertions
+hold, and support normalization makes the symmetry assertion precise.
+
+The degree bound and exponent-zero convention are essential.
+For $(1+q)^2=1+2q+q^2$, comparison at the false degree bound $D=1$
+would require $2\le1$.
+Also $S[2,2]=1$, whereas the shifted polynomial $q$ fails
+\eqref{eq:bh} at $r=0$. Neither example contradicts the theorem.
+For the unshifted families, $S[4,3]=3+2q+q^2$ illustrates bottom
+heaviness without symmetry. The type $B$ examples $S_B[6,4]$ and
+$c_B[7,5]$ in \cite[Section 7.5]{SS} are bottom heavy but not unimodal.
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Source item in \cite{SS}, arXiv v1 & Coverage \\
+\midrule
+Conjecture 7.6 & Reproved; prior proofs: Ma (2026) and Principia Math in Progress (2026). \\
+Ordered families & Reproved; consequences of Ma's product and sum lemmas. \\
+Theorem 2.1 & Symmetric-function consequence reproved; prior proof: Ma (2026). \\
+Conjectures 7.4, 7.5 & Positivity clauses proved for nonzero entries; coefficient and parity log-concavity not covered. \\
+Conjecture 7.9 & Sign assertions proved; symmetry corrected to $P_n/q$. The actual-degree palindrome reading fails at $n=2$, where $P_2=q-q^2$. \\
+Conjectures 6.5, 6.7 & Prior proofs cited: Rhoades--Wilson for the Hilbert series, then Angarone et al. for the type $A$ basis \cite{RW,ACKMR}. \\
+Conjectures 6.15, 6.17 & Type $B$ super-coinvariant Hilbert series and bases not covered. \\
+Sections 7.2--7.4 & Major-index/basis analogues, solving the $q$-difference equation, and a sign-reversing proof of Theorem 2.2 not covered. \\
+Section 7.6, Conjecture 7.8 & Asymptotic normality and limit shapes not covered. \\
+Section 7.1; \cite{Complex} & Displayed complex-group consequences of Ma's Proposition 1 reproved in Corollary~\ref{cor:complex}; other cases not covered. \\
+\cite{PM}, Tasks 2--4 & Product-of-chains injection proved; defect and symmetric-case formulas proved; displayed complex-group extensions proved. Other encodings and analogues not covered. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{Mathematical coverage.}
+The Lean declaration
+\begin{quote}\small\ttfamily
+D5.S3.Combinatorics.QStirling.\\
+SaganSwansonBottomHeavy.result
+\end{quote}
+in the
+\href{https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean}{pinned \texttt{SaganSwansonBottomHeavy.lean} source},
+proves precisely the four-family natural-coefficient assertion of
+Corollary \ref{cor:stirling}, including all integer $k$ and the
+natural-degree convention for zero. The real-weight closure,
+upper-half monotonicity, injections, equality formulas, ordered and
+complex-group consequences, and alternating sum have the written proofs above.
+The accompanying exact-integer checker tests all four recurrences
+for $0\le n\le50$, $-3\le k\le53$, symmetric-function identities
+for $0\le n\le8$, and finite product and unequal-degree mixture
+examples. It additionally checks the chain injections and equality
+formulas, the displayed complex-group recurrences for $2\le m\le5$
+and $n\le10$, and \eqref{eq:alternating} for $n\le30$.
+These finite checks illustrate the universal proofs.
+
+\begin{thebibliography}{9}
+\bibitem{SS}
+B. E. Sagan and J. P. Swanson,
+\emph{$q$-Stirling numbers in type $B$},
+European Journal of Combinatorics \textbf{118} (2024), 103899.
+\href{https://doi.org/10.1016/j.ejc.2023.103899}{doi:10.1016/j.ejc.2023.103899}.
+Original posing version:
+\href{https://arxiv.org/abs/2205.14078v1}{arXiv:2205.14078v1} (2022),
+Section 7.5, Conjecture 7.6, p.~40.
+\bibitem{Ma}
+S.-M. Ma,
+\emph{Log-concavity and log-convexity of Stirling columns, and
+bottom-heaviness of $q$-Stirling numbers},
+ChinaXiv:202609.00184v1, deposited September 18, 2026.
+\href{https://chinaxiv.org/abs/202609.00184v1}{Version record},
+\href{https://doi.org/10.12074/202609.00184}{doi:10.12074/202609.00184}.
+\href{https://www.researchgate.net/publication/414355049_Log-concavity_and_log-convexity_of_Stirling_columns_and_bottom-heaviness_of_q-Stirling_numbers}{Author-uploaded full text},
+Lemmas 2--4, Theorems 4--5 and Proposition 1, pp.~8--12.
+\bibitem{PM}
+Principia Math in Progress,
+\emph{Bottom heaviness of the four $q$-Stirling families:
+a solution to MathDB problem 354788},
+note dated September 12, 2026, Lemmas 1--2 and Theorem 1.
+\href{https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-354788/mathdb-354788-solution.tex}{Version-specific scientific source}.
+\bibitem{Complex}
+B. E. Sagan and J. P. Swanson,
+\emph{Stirling numbers for complex reflection groups},
+Annals of Combinatorics (2025).
+\href{https://doi.org/10.1007/s00026-025-00751-4}{doi:10.1007/s00026-025-00751-4}.
+Formulas cited from
+\href{https://arxiv.org/abs/2408.13874v1}{arXiv:2408.13874v1} (2024).
+\bibitem{DZ}
+M.-J. Ding and J. Zeng,
+\emph{Some identities involving $q$-Stirling numbers of the second kind in type $B$},
+Electronic Journal of Combinatorics \textbf{31}(1) (2024), P1.36.
+\href{https://doi.org/10.37236/12147}{doi:10.37236/12147}.
+\bibitem{ACKMR}
+R. Angarone, P. Commins, T. Karn, S. Murai and B. Rhoades,
+\emph{Superspace coinvariants and hyperplane arrangements},
+\href{https://arxiv.org/abs/2404.17919v2}{arXiv:2404.17919v2} (2026),
+Corollary 7.2; first version 2024.
+\bibitem{RW}
+B. Rhoades and A. Wilson,
+\emph{The Hilbert series of the superspace coinvariant ring},
+Forum of Mathematics, Pi \textbf{12} (2024), e16, Theorem 5.3.
+\href{https://doi.org/10.1017/fmp.2024.14}{doi:10.1017/fmp.2024.14}.
+\end{thebibliography}
+\medskip\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International
+(CC BY 4.0).
+\end{document}
