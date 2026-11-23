@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24411305",
     "current_version": 3,
-    "doi": null,
+    "doi": "10.5281/zenodo.24411306",
     "lean_source": {
       "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
       "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"

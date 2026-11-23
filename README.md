@@ -5,13 +5,15 @@
 We give an alternative proof, after Shi-Mei Ma (2026) and Principia Math in Progress (2026, Theorem 1), of Sagan and Swanson's Conjecture 7.6 (arXiv:2205.14078v1, Section 7.5, p. 40, posed May 27, 2022), using concentric interval layers for all four unshifted families. All four unshifted q-Stirling families are bottom heavy: each coefficient below the middle is at least its reflected coefficient. Concentric interval layers give an elementary proof for every nonnegative linear combination of products of q-integers. The layers give coefficient injections, an exact formula for the reflection defect, and a classification of symmetric entries. We deduce complex-reflection-group consequences and a closed alternating-sum formula clarifying the symmetry in the source's Conjecture 7.9.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24411306](https://doi.org/10.5281/zenodo.24411306)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24411305](https://doi.org/10.5281/zenodo.24411305)
 - License: CC-BY-4.0
 - Version: 3
 - Mathesis record: [ss2205-bottomheavy](https://mathesis-omega-research.apps.chrono-ai.fun/papers/ss2205-bottomheavy?version=3)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math. Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/ss2205-bottomheavy?version=3
+Haobo Ma, Wenlin Zhang (2026). Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math. Mathesis, version 3. https://doi.org/10.5281/zenodo.24411306
 
 ## Statement progress
 
