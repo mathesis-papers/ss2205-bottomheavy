@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24411305",
     "current_version": 3,
     "doi": "10.5281/zenodo.24411306",
+    "kind": "note",
     "lean_source": {
       "revision": "13f4288c2940bd2aa4020cec789956b9265769f5",
       "url": "https://github.com/the-omega-institute/trureturing/blob/13f4288c2940bd2aa4020cec789956b9265769f5/D5/S3/Combinatorics/QStirling/SaganSwansonBottomHeavy.lean"
@@ -55,10 +56,12 @@
     "title": "Coefficient injections and equality for Sagan–Swanson bottom heaviness: an alternative proof after Ma and Principia Math",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T07:03:43.388177253Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "ss2205-bottomheavy"
